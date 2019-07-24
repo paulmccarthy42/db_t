@@ -1,4 +1,6 @@
 require "db_t/railtie"
+require 'presenters/application_record_presenter.rb'
+require 'db_t/core_ext'
 
 module DbT
   def self.with_t(record)
@@ -19,5 +21,3 @@ module DbT
     end
   end
 end
-
-require 'presenters/application_record_presenter.rb'
